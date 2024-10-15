@@ -1,0 +1,39 @@
+main section {
+  padding: 40px 50px;
+}
+main section .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .column h1 {
+  font-size: 3.5em;
+}
+main section .column .first-line,
+main section .column .second-line {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+main section .column .first-line a,
+main section .column .second-line a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+main section .column .first-line a img,
+main section .column .second-line a img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+main section .column .first-line a img:hover,
+main section .column .second-line a img:hover {
+  opacity: 0.7;
+}
+main section .column .first-line a h2:hover,
+main section .column .second-line a h2:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=accueil.css.map */

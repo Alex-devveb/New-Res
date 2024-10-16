@@ -36,4 +36,60 @@ main section .column .second-line a img:hover {
 main section .column .first-line a h2:hover,
 main section .column .second-line a h2:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 930px) {
+  main section {
+    padding: 40px 20px;
+  }
+  main section .column {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .column h1 {
+    font-size: 3em;
+  }
+  main section .column .first-line,
+  main section .column .second-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  main section .column .first-line a img,
+  main section .column .second-line a img {
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  main section .column .first-line a h2,
+  main section .column .second-line a h2 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  main section {
+    padding: 40px 20px;
+  }
+  main section .column {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .column h1 {
+    font-size: 2em;
+  }
+  main section .column .first-line,
+  main section .column .second-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  main section .column .first-line a img,
+  main section .column .second-line a img {
+    max-width: 250px;
+    max-height: 200px;
+  }
+  main section .column .first-line a h2,
+  main section .column .second-line a h2 {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=accueil.css.map */

@@ -1,0 +1,108 @@
+main {
+  section {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .quatre {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px 300px;
+      gap: 15px;
+      .tacos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        img {
+          width: 250px;
+          height: 200px;
+          border-radius: 15px;
+          margin-right: 20px;
+        }
+        div {
+          h3 {
+            font-size: 1.5em;
+            margin-left: 20px;
+            color: rgb(50, 150, 250);
+          }
+          ul {
+            li {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  main {
+    section {
+      padding: 20px;
+      h1 {
+        font-size: 2em;
+        margin-bottom: 50px;
+      }
+      .quatre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        margin: auto;
+        .tacos {
+          img {
+            width: 400px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    section {
+      padding: 5px;
+      h1 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+      .quatre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        .tacos {
+          margin: 0;
+          padding: 0;
+          img {
+            height: 150px;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+          }
+          div {
+            h3 {
+              font-size: 1.2em;
+            }
+            ul {
+              li {
+                font-size: 0.8em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

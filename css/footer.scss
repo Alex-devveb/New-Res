@@ -1,0 +1,31 @@
+footer {
+  padding: 20px 40px;
+  background-color: rgba(110, 220, 230, 0.5);
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      a {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 996px) {
+  footer {
+    padding: 10px;
+    div {
+      flex-direction: row;
+    }
+  }
+}

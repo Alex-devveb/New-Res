@@ -1,0 +1,93 @@
+main section {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+main section h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+main section .sept {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 25px;
+}
+main section .sept .bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+main section .sept .bloc img {
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+main section .sept .bloc div h3 {
+  font-size: 1.5em;
+  margin-left: 20px;
+  color: rgb(50, 150, 250);
+}
+main section .sept .bloc div ul li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  main section {
+    padding: 20px;
+  }
+  main section h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  main section .sept {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    margin: auto;
+  }
+  main section .sept .bloc img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main section {
+    padding: 5px;
+  }
+  main section h1 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  main section .sept {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  main section .sept .bloc {
+    margin: 0;
+    padding: 0;
+  }
+  main section .sept .bloc img {
+    height: 150px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  main section .sept .bloc div h3 {
+    font-size: 1.2em;
+  }
+  main section .sept .bloc div ul li {
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=pizza.css.map */

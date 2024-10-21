@@ -1,41 +1,44 @@
 main {
   section {
-    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
     max-width: 1000px;
     margin: auto;
     h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
       text-align: center;
-      font-size: 2em;
     }
     .six {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 300px 300px;
-      gap: 15px;
-      .bloc {
+      display: flex;
+      flex-direction: column;
+      .deux {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 450px;
-        height: 200px;
-        background-color: rgb(252, 143, 143);
-        padding: 0;
-        margin: auto;
-        img {
-          width: 300px;
-          height: 200px;
-          border-radius: 15px;
-          margin: 0;
-        }
-        div {
-          h3 {
-            font-size: 1.5em;
-            color: rgb(48, 140, 215);
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        .bloc {
+          display: flex;
+          flex-direction: row;
+          width: 45%;
+          img {
+            width: 250px;
+            height: 200px;
+            border-radius: 15px;
           }
-          ul {
-            li {
-              margin-bottom: 4px;
+          div {
+            margin-left: 10px;
+            h3 {
+              font-size: 1.4em;
+            }
+            div {
+              h5 {
+                font-size: 1em;
+                margin: 3px;
+              }
             }
           }
         }
@@ -49,21 +52,23 @@ main {
       margin: auto;
       h1 {
         font-size: 1.6em;
-        margin-bottom: 0;
       }
       .six {
-        .bloc {
-          img {
-            width: 150px;
-            height: 100px;
-          }
-          div {
-            h3 {
-              font-size: 1.2em;
-            }
-            ul {
-              li {
-                font-size: 0.8em;
+        .deux {
+          flex-direction: column;
+          margin-bottom: 0;
+          .bloc {
+            width: 380px;
+            margin-bottom: 25px;
+            div {
+              h3 {
+                font-size: 1.2em;
+              }
+              div {
+                h5 {
+                  font-size: 1em;
+                  margin: 3px;
+                }
               }
             }
           }
@@ -72,31 +77,29 @@ main {
     }
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 600px) {
   main {
     section {
-      margin: auto;
       h1 {
-        margin-top: 30px;
-        font-size: 1.6em;
-        margin-bottom: 0;
+        font-size: 1.1em;
       }
       .six {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px;
-        .bloc {
-          img {
-            width: 150px;
-            height: 120px;
-          }
-          div {
-            h3 {
-              font-size: 1.2em;
+        .deux {
+          .bloc {
+            width: 250px;
+            img {
+              max-width: 150px;
+              max-height: 120px;
             }
-            ul {
-              li {
-                font-size: 0.8em;
+            div {
+              h3 {
+                font-size: 0.7em;
+              }
+              div {
+                h5 {
+                  font-size: 0.5em;
+                  margin: 2px;
+                }
               }
             }
           }

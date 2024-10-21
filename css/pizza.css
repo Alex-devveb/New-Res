@@ -1,79 +1,87 @@
 main section {
-  padding: 40px 30px;
   display: flex;
   flex-direction: column;
+  padding: 40px 10px;
   max-width: 1000px;
   margin: auto;
 }
 main section h1 {
-  text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
+  text-align: center;
 }
 main section .sept {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
 }
-main section .sept .bloc {
+main section .sept .deux {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-main section .sept .bloc img {
-  width: 300px;
-  height: 250px;
+main section .sept .deux .bloc {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+}
+main section .sept .deux .bloc img {
+  width: 250px;
+  height: 200px;
   border-radius: 15px;
-  margin-right: 20px;
 }
-main section .sept .bloc div h3 {
-  font-size: 1.5em;
-  margin-left: 20px;
-  color: rgb(50, 150, 250);
+main section .sept .deux .bloc div {
+  margin-left: 10px;
 }
-main section .sept .bloc div ul li {
-  margin-bottom: 5px;
+main section .sept .deux .bloc div h3 {
+  font-size: 1.4em;
+}
+main section .sept .deux .bloc div div h5 {
+  font-size: 1em;
+  margin: 3px;
 }
 
-@media screen and (max-width: 990px) {
-  main section h1 {
-    font-size: 2em;
-  }
-  main section .sept {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px;
+@media screen and (max-width: 996px) {
+  main section {
     margin: auto;
   }
-  main section .sept .bloc img {
-    width: 400px;
-    height: 300px;
+  main section h1 {
+    font-size: 1.6em;
+  }
+  main section .sept .deux {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  main section .sept .deux .bloc {
+    width: 380px;
+    margin-bottom: 25px;
+  }
+  main section .sept .deux .bloc div h3 {
+    font-size: 1.2em;
+  }
+  main section .sept .deux .bloc div div h5 {
+    font-size: 1em;
+    margin: 3px;
   }
 }
 @media screen and (max-width: 600px) {
   main section h1 {
-    font-size: 1.3em;
-    margin-bottom: 5px;
+    font-size: 1.1em;
   }
-  main section .sept {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
+  main section .sept .deux .bloc {
+    width: 250px;
   }
-  main section .sept .bloc {
-    width: 300px;
-    align-items: center;
+  main section .sept .deux .bloc img {
+    max-width: 150px;
+    max-height: 120px;
   }
-  main section .sept .bloc img {
-    height: 120px;
-    width: 150px;
+  main section .sept .deux .bloc div h3 {
+    font-size: 0.7em;
   }
-  main section .sept .bloc div h3 {
-    font-size: 1.2em;
-    margin: 0;
-  }
-  main section .sept .bloc div ul li {
-    font-size: 0.8em;
+  main section .sept .deux .bloc div div h5 {
+    font-size: 0.5em;
+    margin: 2px;
   }
 }/*# sourceMappingURL=pizza.css.map */

@@ -1,39 +1,44 @@
 main {
   section {
-    padding: 40px 30px;
     display: flex;
     flex-direction: column;
+    padding: 40px 10px;
     max-width: 1000px;
     margin: auto;
     h1 {
-      text-align: center;
       font-size: 2.5em;
       margin-bottom: 40px;
+      text-align: center;
     }
     .sept {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 300px 300px;
-      gap: 15px;
-      .bloc {
+      display: flex;
+      flex-direction: column;
+      .deux {
         display: flex;
         flex-direction: row;
         align-items: center;
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 15px;
-          margin-right: 20px;
-        }
-        div {
-          h3 {
-            font-size: 1.5em;
-            margin-left: 20px;
-            color: rgb(50, 150, 250);
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        .bloc {
+          display: flex;
+          flex-direction: row;
+          width: 45%;
+          img {
+            width: 250px;
+            height: 200px;
+            border-radius: 15px;
           }
-          ul {
-            li {
-              margin-bottom: 5px;
+          div {
+            margin-left: 10px;
+            h3 {
+              font-size: 1.4em;
+            }
+            div {
+              h5 {
+                font-size: 1em;
+                margin: 3px;
+              }
             }
           }
         }
@@ -41,21 +46,31 @@ main {
     }
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 996px) {
   main {
     section {
+      margin: auto;
       h1 {
-        font-size: 2em;
+        font-size: 1.6em;
       }
       .sept {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px;
-        margin: auto;
-        .bloc {
-          img {
-            width: 400px;
-            height: 300px;
+        .deux {
+          flex-direction: column;
+          margin-bottom: 0;
+          .bloc {
+            width: 380px;
+            margin-bottom: 25px;
+            div {
+              h3 {
+                font-size: 1.2em;
+              }
+              div {
+                h5 {
+                  font-size: 1em;
+                  margin: 3px;
+                }
+              }
+            }
           }
         }
       }
@@ -66,29 +81,25 @@ main {
   main {
     section {
       h1 {
-        font-size: 1.3em;
-        margin-bottom: 5px;
+        font-size: 1.1em;
       }
       .sept {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px;
-        .bloc {
-          width: 300px;
-          align-items: center;
-          img {
-            height: 120px;
-            width: 150px;
-          }
-          div {
-
-            h3 {
-              font-size: 1.2em;
-              margin: 0;
+        .deux {
+          .bloc {
+            width: 250px;
+            img {
+              max-width: 150px;
+              max-height: 120px;
             }
-            ul {
-              li {
-                font-size: 0.8em;
+            div {
+              h3 {
+                font-size: 0.7em;
+              }
+              div {
+                h5 {
+                  font-size: 0.5em;
+                  margin: 2px;
+                }
               }
             }
           }

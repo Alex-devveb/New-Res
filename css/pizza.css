@@ -14,14 +14,12 @@ main section .sept {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px;
-  gap: 25px;
+  gap: 15px;
 }
 main section .sept .bloc {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
 }
 main section .sept .bloc img {
   width: 300px;
@@ -39,12 +37,8 @@ main section .sept .bloc div ul li {
 }
 
 @media screen and (max-width: 990px) {
-  main section {
-    padding: 20px;
-  }
   main section h1 {
     font-size: 2em;
-    margin-bottom: 50px;
   }
   main section .sept {
     display: grid;
@@ -58,34 +52,26 @@ main section .sept .bloc div ul li {
   }
 }
 @media screen and (max-width: 600px) {
-  main section {
-    padding: 5px;
-  }
   main section h1 {
     font-size: 1.3em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   main section .sept {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
   }
   main section .sept .bloc {
-    margin: 0;
-    padding: 0;
+    width: 300px;
+    align-items: center;
   }
   main section .sept .bloc img {
-    height: 150px;
-    width: 200px;
-    margin: 0;
-    padding: 0;
+    height: 120px;
+    width: 150px;
   }
   main section .sept .bloc div h3 {
     font-size: 1.2em;
+    margin: 0;
   }
   main section .sept .bloc div ul li {
     font-size: 0.8em;

@@ -18,13 +18,17 @@ main section .six .bloc {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 450px;
+  height: 200px;
+  background-color: rgb(252, 143, 143);
+  padding: 0;
+  margin: auto;
 }
 main section .six .bloc img {
-  width: 250px;
+  width: 300px;
   height: 200px;
-  margin-bottom: 15px;
   border-radius: 15px;
-  margin-right: 20px;
+  margin: 0;
 }
 main section .six .bloc div h3 {
   font-size: 1.5em;
@@ -36,7 +40,6 @@ main section .six .bloc div ul li {
 
 @media screen and (max-width: 996px) {
   main section {
-    max-width: 1000px;
     margin: auto;
   }
   main section h1 {
@@ -46,7 +49,6 @@ main section .six .bloc div ul li {
   main section .six .bloc img {
     width: 150px;
     height: 100px;
-    margin-right: 10px;
   }
   main section .six .bloc div h3 {
     font-size: 1.2em;
@@ -55,9 +57,8 @@ main section .six .bloc div ul li {
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   main section {
-    max-width: 1000px;
     margin: auto;
   }
   main section h1 {
@@ -72,8 +73,7 @@ main section .six .bloc div ul li {
   }
   main section .six .bloc img {
     width: 150px;
-    height: 100px;
-    margin-right: 20px;
+    height: 120px;
   }
   main section .six .bloc div h3 {
     font-size: 1.2em;

@@ -1,0 +1,51 @@
+main section {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  justify-content: center;
+}
+main section img {
+  width: 500px;
+  margin-right: 20px;
+}
+main section div {
+  border: 1px solid gray;
+  padding: 20px 40px;
+}
+main section div h2 {
+  text-align: center;
+}
+main section div h4 {
+  text-align: justify;
+}
+
+@media screen and (max-width: 996px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+  }
+  main section img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 540px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    margin: auto;
+    padding: 10px 5px;
+  }
+  main section img {
+    width: 320px;
+  }
+  main section div {
+    padding: 0;
+  }
+  main section div h4 {
+    text-align: center;
+  }
+}/*# sourceMappingURL=dessert.css.map */

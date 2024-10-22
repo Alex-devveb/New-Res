@@ -20,6 +20,13 @@ header nav div a {
 header nav div a:hover {
   text-decoration: underline;
 }
+header nav .menu {
+  display: flex;
+  flex-direction: row;
+}
+header nav .menu a {
+  color: red;
+}
 
 @media screen and (max-width: 750px) {
   header nav {
@@ -33,5 +40,13 @@ header nav div a:hover {
     font-size: 1em;
     margin-right: 8px;
     margin-left: 8px;
+  }
+  header nav .menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  header nav .menu a {
+    color: red;
   }
 }/*# sourceMappingURL=nav.css.map */

@@ -1,3 +1,6 @@
+main {
+  /********* Form ********/
+}
 main section {
   padding: 20px 50px;
 }
@@ -25,8 +28,8 @@ main section .column .second-line a {
 }
 main section .column .first-line a img,
 main section .column .second-line a img {
-  width: 300px;
-  height: 200px;
+  width: 220px;
+  height: 150px;
   border-radius: 10px;
 }
 main section .column .first-line a img:hover,
@@ -36,6 +39,52 @@ main section .column .second-line a img:hover {
 main section .column .first-line a h2:hover,
 main section .column .second-line a h2:hover {
   text-decoration: underline;
+}
+main .form-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background-color: rgba(133, 220, 223, 0.3);
+}
+main .form-section h1 {
+  text-align: center;
+}
+main .form-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+main .form-section form .form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+main .form-section form .form-row .form-column {
+  display: flex;
+  flex-direction: column;
+}
+main .form-section form .form-row .form-column input[type=text] {
+  margin-bottom: 15px;
+  height: 25px;
+}
+main .form-section form label {
+  margin-bottom: 5px;
+}
+main .form-section form textarea {
+  margin-bottom: 20px;
+}
+main .form-section form input[type=submit] {
+  width: 100px;
+  margin: auto;
+  border-radius: 20px;
+  border: 2px;
+  padding: 8px;
+  font-size: 1em;
+}
+main .form-section form input[type=submit]:hover {
+  background-color: rgba(60, 174, 168, 0.5);
+  color: white;
 }
 
 @media screen and (max-width: 930px) {
@@ -67,6 +116,9 @@ main section .column .second-line a h2:hover {
   }
 }
 @media screen and (max-width: 540px) {
+  main {
+    /********* Form 540px ********/
+  }
   main section {
     padding: 40px 20px;
   }
@@ -91,5 +143,9 @@ main section .column .second-line a h2:hover {
   main section .column .first-line a h2,
   main section .column .second-line a h2 {
     margin-top: 0;
+  }
+  main .form-section form .form-row {
+    flex-direction: column;
+    gap: 0;
   }
 }/*# sourceMappingURL=accueil.css.map */

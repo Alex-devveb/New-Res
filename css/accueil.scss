@@ -20,8 +20,8 @@ main {
           text-decoration: none;
           color: black;
           img {
-            width: 300px;
-            height: 200px;
+            width: 220px;
+            height: 150px;
             border-radius: 10px;
             &:hover {
               opacity: 0.7;
@@ -32,6 +32,53 @@ main {
               text-decoration: underline;
             }
           }
+        }
+      }
+    }
+  }
+  /********* Form ********/
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: rgba(133, 220, 223, 0.3);
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 1000px;
+      margin: auto;
+      .form-row {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        .form-column {
+          display: flex;
+          flex-direction: column;
+          input[type="text"] {
+            margin-bottom: 15px;
+            height: 25px;
+          }
+        }
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      textarea {
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        width: 100px;
+        margin: auto;
+        border-radius: 20px;
+        border: 2px;
+        padding: 8px;
+        font-size: 1em;
+        &:hover {
+          background-color: rgba(60, 174, 168, 0.5);
+          color: white;
         }
       }
     }
@@ -91,6 +138,15 @@ main {
               margin-top: 0;
             }
           }
+        }
+      }
+    }
+    /********* Form 540px ********/
+    .form-section {
+      form {
+        .form-row {
+          flex-direction: column;
+          gap: 0;
         }
       }
     }

@@ -25,7 +25,7 @@ header nav .menu {
   flex-direction: row;
 }
 header nav .menu a {
-  color: red;
+  color: rgb(214, 153, 103);
 }
 
 @media screen and (max-width: 750px) {
